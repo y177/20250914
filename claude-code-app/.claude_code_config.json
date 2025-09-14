@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\82103\\Downloads",
+        "C:\\Users\\82103\\OneDrive\\Portal"
+      ]
+    },
+    "mcp-server-firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-8d63db7b8df5473abbab6c8912d98992",
+        "FIRECRAWL_RETRY_MAX_ATTEMPTS": "5",
+        "FIRECRAWL_RETRY_INITIAL_DELAY": "2000",
+        "FIRECRAWL_RETRY_MAX_DELAY": "30000",
+        "FIRECRAWL_RETRY_BACKOFF_FACTOR": "3",
+        "FIRECRAWL_CREDIT_WARNING_THRESHOLD": "2000",
+        "FIRECRAWL_CREDIT_CRITICAL_THRESHOLD": "500"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "youtube": {
+      "command": "npx",
+      "args": ["-y", "zubeid-youtube-mcp-server"],
+      "env": {
+        "YOUTUBE_API_KEY": "AIzaSyAc0yhND7tfjSVLjCo_DiBOVlYiBeNdv-4"
+      }
+    },
+    "youtube-video-summarizer": {
+      "command": "npx",
+      "args": ["-y", "youtube-video-summarizer-mcp"]
+    }
+  }
+}

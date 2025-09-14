@@ -1,0 +1,52 @@
+{
+  "toolsTimeoutSeconds": 180,
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "sequential-thinking": {
+      "command": "npx", 
+      "args": ["@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "github-official": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "desktop-automation": {
+      "command": "npx",
+      "args": ["-y", "@wonderwhy-er/desktop-commander"]
+    },
+    "notion-official": {
+      "command": "npx",
+      "args": ["-y", "@makenotion/notion-mcp-server"],
+      "env": {
+        "NOTION_TOKEN": "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"
+      }
+    },
+    "obsidian-mcp": {
+      "command": "npx",
+      "args": ["-y", "obsidian-mcp-server"],
+      "env": {
+        "OBSIDIAN_API_KEY": "b2c601c5cd1a6afc83900cf11fddb5cc6116409129d9786e8df8816fc3c8cb0b",
+        "OBSIDIAN_BASE_URL": "https://127.0.0.1:27124",
+        "OBSIDIAN_VERIFY_SSL": "false",
+        "OBSIDIAN_ENABLE_CACHE": "true"
+      }
+    }
+  },
+  "mcpClient": {
+    "enabled": true,
+    "debug": true,
+    "triggerKeywords": {
+      "use context7": ["context7"]
+    }
+  }
+}
