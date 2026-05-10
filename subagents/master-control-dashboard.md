@@ -6,11 +6,11 @@
 
 | Agent | 전문 분야 | 주요 MCP 서버 | 상태 |
 |-------|-----------|---------------|------|
-| **SysMonitor** | 시스템 모니터링 | Desktop, Playwright, Sequential | ✅ 활성 |
-| **PerfOptimizer** | 성능 최적화 | Context7, Sequential, Desktop | ✅ 활성 |
-| **AutoFlow** | 워크플로우 자동화 | Playwright, Desktop, Sequential | ✅ 활성 |
-| **MainScheduler** | 유지보수 스케줄링 | Sequential, Context7, Desktop | ✅ 활성 |
-| **DataCrawler** | 동적 데이터 크롤링 | Playwright, Sequential, Context7, Notion | ✅ 활성 |
+| 🔵 **SysMonitor** | 시스템 모니터링 | Desktop, Playwright, Sequential | 🔵 활성 |
+| 🟢 **PerfOptimizer** | 성능 최적화 | Context7, Sequential, Desktop | 🟢 활성 |
+| 🟡 **AutoFlow** | 워크플로우 자동화 | Playwright, Desktop, Sequential | 🟡 활성 |
+| 🟣 **MainScheduler** | 유지보수 스케줄링 | Sequential, Context7, Desktop | 🟣 활성 |
+| 🔴 **DataCrawler** | 동적 데이터 크롤링 | Playwright, Sequential, Context7, Notion | 🔴 활성 |
 
 ---
 
@@ -36,7 +36,7 @@ claude --print "PerfOptimizer로 하루 성능을 정리하고, DataCrawler로 �
 
 ## 📊 **Agent별 전문 기능 활용**
 
-### **🖥️ SysMonitor (시스템 모니터링)**
+### **🔵 SysMonitor (시스템 모니터링)**
 ```bash
 # 실시간 모니터링 시작
 claude --debug --print "Desktop으로 CPU, 메모리, 디스크 사용량을 모니터링하고 이상 징후를 알려줘"
@@ -45,7 +45,7 @@ claude --debug --print "Desktop으로 CPU, 메모리, 디스크 사용량을 모
 claude --print "Playwright로 시스템 성능을 시각화하는 웹 대시보드를 생성해줘"
 ```
 
-### **⚡ PerfOptimizer (성능 최적화)**
+### **🟢 PerfOptimizer (성능 최적화)**
 ```bash
 # 성능 최적화 실행
 claude --debug --print "Context7에서 최신 최적화 기법을 찾고, Sequential로 체계적인 최적화를 실행해줘"
@@ -54,7 +54,7 @@ claude --debug --print "Context7에서 최신 최적화 기법을 찾고, Sequen
 claude --print "Desktop으로 임시 파일, 캐시, 불필요한 프로세스를 정리해줘"
 ```
 
-### **🔄 AutoFlow (자동화)**
+### **🟡 AutoFlow (자동화)**
 ```bash
 # 워크플로우 실행
 claude --debug --print "Playwright로 웹 기반 작업을 자동화하고, Desktop으로 파일 관리를 실행해줘"
@@ -63,7 +63,7 @@ claude --debug --print "Playwright로 웹 기반 작업을 자동화하고, Desk
 claude --print "Sequential로 반복 작업을 분석하고 자동화 워크플로우를 생성해줘"
 ```
 
-### **🗓️ MainScheduler (유지보수)**
+### **🟣 MainScheduler (유지보수)**
 ```bash
 # 유지보수 계획 실행
 claude --debug --print "Sequential로 이번 주 유지보수 계획을 확인하고, Desktop으로 예정된 작업을 실행해줘"
@@ -72,7 +72,7 @@ claude --debug --print "Sequential로 이번 주 유지보수 계획을 확인�
 claude --print "Context7에서 유지보수 모범 사례를 확인하고, 시스템 예방 점검을 실행해줘"
 ```
 
-### **🕸️ DataCrawler (데이터 수집)**
+### **🔴 DataCrawler (데이터 수집)**
 ```bash
 # 실시간 의료 정보 모니터링
 claude --debug --print "Playwright로 주요 의료 사이트의 변화를 감지하고, Sequential로 중요도에 따라 분류해줘"
@@ -91,31 +91,31 @@ claude --debug --print "Sequential로 수집된 의료 데이터의 정확성을
 ### **🌅 아침 시동 프로토콜 (오전 8시)**
 ```bash
 claude --debug --print "
-1. SysMonitor로 야간 시스템 상태 체크
-2. DataCrawler로 의료진을 위한 일일 뉴스 브리핑 생성
-3. MainScheduler로 오늘 유지보수 계획 확인  
-4. AutoFlow로 일과 시작 자동화 실행
-5. PerfOptimizer로 시스템 최적화 상태 점검"
+1. 🔵 SysMonitor로 야간 시스템 상태 체크
+2. 🔴 DataCrawler로 의료진을 위한 일일 뉴스 브리핑 생성
+3. 🟣 MainScheduler로 오늘 유지보수 계획 확인  
+4. 🟡 AutoFlow로 일과 시작 자동화 실행
+5. 🟢 PerfOptimizer로 시스템 최적화 상태 점검"
 ```
 
 ### **🌙 저녁 정리 프로토콜 (오후 6시)**
 ```bash
 claude --print "
-1. SysMonitor로 하루 성능 데이터 수집
-2. DataCrawler로 하루 수집된 의료 정보 품질 검증
-3. PerfOptimizer로 시스템 정리 및 최적화
-4. AutoFlow로 백업 및 정리 워크플로우 실행
-5. MainScheduler로 내일 계획 업데이트"
+1. 🔵 SysMonitor로 하루 성능 데이터 수집
+2. 🔴 DataCrawler로 하루 수집된 의료 정보 품질 검증
+3. 🟢 PerfOptimizer로 시스템 정리 및 최적화
+4. 🟡 AutoFlow로 백업 및 정리 워크플로우 실행
+5. 🟣 MainScheduler로 내일 계획 업데이트"
 ```
 
 ### **📊 주간 종합 점검 (일요일 새벽 2시)**
 ```bash
 claude --debug --print "
-1. MainScheduler로 주간 유지보수 실행
-2. DataCrawler로 주간 의료 트렌드 분석 및 리포트 생성
-3. PerfOptimizer로 종합 시스템 최적화
-4. SysMonitor로 주간 성능 리포트 생성
-5. AutoFlow로 정기 자동화 작업 실행"
+1. 🟣 MainScheduler로 주간 유지보수 실행
+2. 🔴 DataCrawler로 주간 의료 트렌드 분석 및 리포트 생성
+3. 🟢 PerfOptimizer로 종합 시스템 최적화
+4. 🔵 SysMonitor로 주간 성능 리포트 생성
+5. 🟡 AutoFlow로 정기 자동화 작업 실행"
 ```
 
 ---
@@ -197,7 +197,24 @@ claude --debug --print "Sequential로 문제를 분석하고, MainScheduler가 �
 claude --debug --print "DataCrawler가 의료 정보를 수집하고, Sequential로 데이터를 처리하며, Context7의 패턴으로 분류한 후, Notion에 시각화해줘"
 ```
 
-## 🎊 **DataCrawler 통합 완료!**
+## 🌈 **Sub-Agent 색상 체계 및 DataCrawler 통합 완료!**
+
+### **🎨 색상 체계 (Color System)**
+
+| 색상 | Agent | 의미 | 특성 |
+|------|-------|------|------|
+| 🔵 **파란색** | SysMonitor | 신뢰성, 안정성 | 시스템 모니터링의 핵심 역할 |
+| 🟢 **녹색** | PerfOptimizer | 효율성, 최적화 | 성능 향상과 건강한 상태 |
+| 🟡 **노란색** | AutoFlow | 에너지, 자동화 | 업무 효율성과 활력 |
+| 🟣 **보라색** | MainScheduler | 전문성, 계획성 | 체계적 관리와 전략적 사고 |
+| 🔴 **빨간색** | DataCrawler | 중요성, 실시간성 | 데이터 수집의 긴급성과 중요성 |
+
+### **📊 상태 표시 시스템**
+- 🟢 **정상**: 모든 기능이 정상 작동
+- 🟡 **주의**: 성능 저하 또는 경미한 이슈
+- 🟠 **경고**: 즉시 주의가 필요한 상태
+- 🔴 **위험**: 심각한 문제 또는 중단 상태
+- ⚫ **비활성**: Agent가 비활성화된 상태
 
 ### **🆕 새로운 기능**
 - **실시간 의료 정보 모니터링**: 10분 간격으로 중요 사이트 변화 감지

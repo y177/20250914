@@ -1,4 +1,6 @@
-# ⚡ 성능 최적화 Sub-Agent (PerfOptimizer)
+# 🟢 성능 최적화 Sub-Agent (PerfOptimizer)
+
+## 🎨 **색상 시스템**: 🟢 **녹색** - 효율성, 최적화, 건강한 성능
 
 ## 🎯 **전문 분야**
 - 시스템 성능 병목 지점 식별

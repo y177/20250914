@@ -5,8 +5,27 @@
       "Bash(claude config --help)",
       "Bash(claude mcp:*)",
       "Bash(npx:*)",
-      "Bash(npm search:*)"
+      "Bash(npm search:*)",
+      "Bash(git config:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_click",
+      "mcp__sequential__sequentialthinking",
+      "Bash(conda run:*)",
+      "mcp__firecrawl__firecrawl_scrape",
+      "Bash(git clone:*)"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "filesystem",
+    "firecrawl",
+    "playwright",
+    "youtube-zubeid",
+    "youtube-summarizer",
+    "context7",
+    "sequential",
+    "magic"
+  ]
 }
